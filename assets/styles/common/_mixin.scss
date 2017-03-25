@@ -1,0 +1,99 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*example*/
+/*
+	.box { 
+		@include border-radius(10px); 
+	}
+*/
+
+
+
+/*----------------------Background---------------------*/
+@mixin background-transparant {
+	content: '';
+	display: block;
+	background-color: rgba(0,0,0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@mixin background($r) {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: $r;
+}
+
+
+/*------------------------Fonts--------------------------*/
+@mixin font_1 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+@mixin font_2($f-size, $c-font, $f-weight, $f-family) {
+	font-size: $f-size;
+	color: $c-font;
+	font-weight: $f-weight;
+	font-family: $f-family;
+}
+@mixin p($ln-height, $c, $f-weight) {
+	line-height: $ln-height;
+	color: $c;
+	font-weight: $f-weight;
+}
+
+
+/*-----------------------Button---------------------------*/
+@mixin btn($color, $radius, $br-color) {
+	background-color: $color;
+	border-radius: $radius;
+	border-color: $br-color;
+}
+@mixin btn_2($color, $border, $c-border, $c-background,  $padding) {
+	color: $color;
+	border: $border;
+	border-color: $c-border;
+	background: $c-background; 
+	padding: $padding;
+}
+@mixin border_radius($border, $c-radius, $c-background,  $height, $width) {
+	border: $border;
+	border-color: $c-radius;
+	background: $c-background; 
+	height: $height;
+	width: $width;
+}
+
+
+/*------------------------images-----------------------------*/
+@mixin image($bdr, $max, $wth) {
+	border: $bdr;
+	max-width: $max;
+	width: $wth;
+}
+@mixin paralax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@mixin before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 62%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: -webkit-linear-gradient(to bottom, transparent, #000);
+    background-image: -moz-linear-gradient(to bottom, transparent, #000);
+    background-image: -o-linear-gradient(to bottom, transparent, #000);
+    background-image: linear-gradient(to bottom, transparent, #000);
+}

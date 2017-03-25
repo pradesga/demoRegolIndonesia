@@ -1,0 +1,251 @@
+.line-team {
+	@media screen and(max-width: 768px) {
+		display: none;
+	}
+}
+.image-team {
+	.img-team {
+		margin-bottom: 70px;
+	}
+}
+.teamhistory {
+	margin-bottom: 25px;
+	.history {
+		.line {
+			.line-team {
+				@media screen and(max-width: 480px) {
+					display: none;
+				}
+			}
+		}
+		.title {
+			@include font_2(18px, #4b4b4b, 400, $Montserrat)
+			margin-top: 0px;
+			@media screen and(max-width: 480px) {
+				font-size: 12px;
+			}
+			@media screen and(max-width: 360px) {
+				font-size: 10px;
+			}
+			@media screen and(max-width: 320px) {
+				font-size: 8px;
+			}
+		}
+		.sub-title {
+			@include font_2(16px, $second-primary, 400, $Montserrat)
+			@media screen and(max-width: 480px) {
+				font-size: 10px;
+			}
+			@media screen and(max-width: 360px) {
+				font-size: 8px;
+			}
+			@media screen and(max-width: 320px) {
+				font-size: 6px;
+			}
+		}
+	}
+	.content-team {
+		.content-block {
+			@include font_2(16px, #555555, 500, $Montserrat)
+			font-style: italic;
+			text-transform: capitalize;
+			@media screen and(max-width: 480px) {
+				font-size: 12px;
+			}
+			@media screen and(max-width: 360px) {
+				font-size: 8px;
+			}
+			@media screen and(max-width: 320px) {
+				font-size: 6px;
+			}
+		}
+		.content-biasa {
+			@include font_2(14px, #9b9797, 400, myriad-pro)
+			@media screen and(max-width: 480px) {
+				font-size: 10px;
+			}
+			@media screen and(max-width: 360px) {
+				font-size: 8px;
+			}
+			@media screen and(max-width: 320px) {
+				font-size: 6px;
+			}
+		}
+	}
+}
+
+.ower-team {
+	margin-top: 55px;
+	@media screen and(max-width: 480px) {
+		margin-top: 20px;
+	}
+	.history {
+		.title {
+			@include font_2(18px, #4b4b4b, 400, $Montserrat)
+			margin-top: 0px;
+			@media screen and(max-width: 480px) {
+				font-size: 14px;
+			}
+			@media screen and(max-width: 360px) {
+				font-size: 10px;
+			}
+			@media screen and(max-width: 320px) {
+				font-size: 8px;
+			}
+		}
+	}
+	.our-team {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 100px;
+		@media screen and(max-width: 480px) {
+			margin-top: 10px;
+			margin-bottom: 40px;
+		}
+		@media screen and(max-width: 360px) {
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		.img-member {
+			.member {
+				margin: 0 auto;
+				display: block;
+				border: 5px solid $second-primary;
+				@media screen and(max-width: 480px) {
+					border: 3px solid $second-primary;
+				}
+				@media screen and(max-width: 320px) {
+					border: 1px solid $second-primary;
+				}
+			}
+		}
+		.name {
+			.title-member {
+				@include font_2(18px, #4b4b4b, 400, $Montserrat)
+				margin-top: 40px;
+				margin-bottom: 10px;
+				@media screen and(max-width: 480px) {
+					font-size: 12px;
+					margin-top: 20px;
+					margin-bottom: 5px;
+				}
+				@media screen and(max-width: 360px) {
+					font-size: 8px;
+				}
+				@media screen and(max-width: 320px) {
+					margin-top: 10px;
+					font-size: 6px;
+				}
+			}
+		}
+		.position {
+			.title-jabatan {
+				@include font_2(14px, #949292, 400, $Montserrat)
+				margin: 0px;
+				@media screen and(max-width: 480px) {
+					font-size: 10px;
+				}
+				@media screen and(max-width: 320px) {
+					font-size: 6px;
+				}
+			}	
+		}
+	}
+}
+.what-we-do {
+	margin-bottom: 30px;
+	.title {
+		.title-we-do {
+			@include font_2(19px, #4b4b4b, 400, $Montserrat)
+			margin-top: 0px;
+			@media screen and(max-width: 480px) {
+				font-size: 15px;
+			}
+			@media screen and(max-width: 360px) {
+					font-size: 10px;
+				}
+			@media screen and(max-width: 320px) {
+					font-size: 8px;
+				}
+		}
+	}
+	.content-we-do {
+		margin-top: 20px;
+		.list-menu {
+			.nav-tabs{
+				border:none;
+			}
+			.active {
+				a{
+					color: $second-primary;
+				}
+			}
+			li {
+				margin-bottom: 20px;
+				a {
+					@include font_2(18px, #b7b3b3, 400, $Montserrat)
+					border:none;
+					&:hover {
+						color: $second-primary;
+						text-decoration: none;
+					}
+					@media screen and(max-width: 480px) {
+						font-size: 14px;
+					}
+					@media screen and(max-width: 360px) {
+						font-size: 10px;
+					}
+					@media screen and(max-width: 320px) {
+						font-size: 6px;
+					}
+				}
+			}
+		}
+		.we-do {
+			.tab-pane{/*
+				&.fade{
+					height: 0px;
+					-webkit-transition: height 0.8s ease-out;
+    				transition: height 0.8s ease-out;
+				}
+				&.in{
+					height: auto;
+					-webkit-transition: height 0.8s ease-in;
+    				transition: height 0.8s ease-in;
+				}*/
+			}
+			.title {
+				a {
+					@include font_2(16px, #4b4a4a, 600, $Montserrat)
+					text-transform: capitalize;
+					margin-bottom: 30px;
+					&:hover {
+						color: $second-primary;
+						text-decoration: none;
+					}
+					@media screen and(max-width: 480px) {
+						font-size: 12px;
+					}
+					@media screen and(max-width: 360px) {
+						font-size: 8px;
+					}
+					@media screen and(max-width: 320px) {
+						font-size: 6px;
+					}
+				}
+			}
+			.content {
+				@include font_2(14px, #4b4a4a, 300, $Montserrat)
+				@media screen and(max-width: 480px) {
+					font-size: 12px;
+				}
+				@media screen and(max-width: 360px) {
+					font-size: 8px;
+				}
+				@media screen and(max-width: 320px) {
+					font-size: 6px;
+				}
+			}
+		}
+	}
+}

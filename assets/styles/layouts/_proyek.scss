@@ -1,0 +1,128 @@
+.proyek {
+	.content-proyek {
+		.list-link {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			@media screen and(max-width: 480px) {
+				padding: 30px 0;
+				text-align: center;
+			}
+			a {
+				@include font_2(16px, #4b4b4b, 300, $Montserrat)
+				padding-left: 30px;
+				padding-right: 30px;
+				&.active {
+					color: $second-primary
+				}
+				&:hover {
+					color: $second-primary;
+					text-decoration: none;
+				}
+				@media screen and(max-width: 990px) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				@media screen and(max-width: 480px) {
+					padding-left: 2px;
+					padding-right: 2px;
+					font-size: 12px;
+				}
+			}
+		}
+		.img-content {
+			.img{
+				padding: 15px;
+				.div {
+					position: relative;
+					width: 100%;
+					overflow: hidden;
+					.overlay {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						z-index: 9999;
+					}
+					.title {
+						text-align: center;
+						position: relative;
+						padding: 10px;
+						@include font_2(20px, #f00, 300, $Montserrat)
+					}
+					.content {
+						text-align: center;
+						position: relative;
+						padding: 10px;
+						@include font_2(14px, #fff, 300, myriad-pro)
+					}
+				}
+				.div3 {
+					img {
+						-webkit-transition: all 0.4s ease-in;
+						transition: all 0.8s ease-in;
+					}
+					.title {
+						-webkit-transform: scale(0.7);
+						-ms-transform: scale(0.7);
+						transform: scale(0.7);
+						-webkit-transition: all 0.4s ease-in;
+						transition: all 0.8s ease-in;
+						opacity: 0;
+					}
+					.content {
+						@extend .title;
+					}
+				}
+				.div3:hover h2, .div3:hover p {
+					opacity: 1;
+					-webkit-transform: scale(1);
+					-ms-transform: scale(1);
+					transform: scale(1);
+				}
+				.div3:hover img {
+					filter: grayscale(1) blur(3px);
+					-webkit-filter: grayscale(1) blur(3px);
+					-webkit-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					transform: scale(1.2);
+				}
+			}
+			a:hover::after {
+				@include background-transparant;
+				padding: 15px;
+				opacity: 1;
+				-webkit-transition: all 0.6s ease 0s;
+				transition: all 0.6s ease 0s;
+			}
+		}
+		.page-number {
+			text-align: center;
+			margin: 100px 0;
+			@media screen and(max-width: 768px) {
+				margin: 50px 0;
+			}
+			@media screen and(max-width: 480px) {
+				margin: 25px 0;
+			}
+			.pagination {
+				margin: 0px;
+				li
+					a {
+						border-radius: 0px;
+						border: transparent;
+						@include font_2(16px, #b8b8b8, 500, $Montserrat)
+						&.active {
+							color: $second-primary;
+						}
+						&:hover {
+							@extend .active;
+							background-color: transparent;
+						}
+
+						.fa {
+							padding: 3px 6px;
+						}
+					}
+			}
+		}
+	}
+}

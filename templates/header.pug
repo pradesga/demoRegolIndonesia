@@ -1,0 +1,46 @@
+section.header
+	.col-xs-4.header-left
+		img.brand(src="dist/images/background_header.png")
+		a.img-logo(href="/")
+			img.img-responsive(src="dist/images/logo.png")
+	.col-xs-12.header-right
+		.top-navbar
+			.container
+				ul.list-inline.list-unstyled
+					li.col-sm-3.col-xs-6.pull-right.search
+						form.search-form.clearfix(action="")
+							.form-group.has-feedback
+								input.form-control(type="text" name="search" placeholder="Search" id="seacrh")
+								.glyphicon.glyphicon-search.form-control-feedback.fa-search
+					li.col-xs-8.tag
+						h1 PROPERTY DEVELOPER MANAGEMENT
+		nav.navbar.navbar-inverse
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='index.html')
+					img.img-responsive(src="dist/images/logo_ok.png")
+			#myNavbar.collapse.navbar-collapse.col-xs-offset-3
+				ul.nav.navbar-nav
+					li.active
+						a(href="index.html")
+							i.fa.fa-home(aria-hiden="true")
+							| Home
+					li
+						a(href="single-post.html")
+							span.img-r
+							| Regol
+					li
+						a(href="team.html")
+							i.fa.fa-users(aria-hiden="true")
+							| Sdm
+					li
+						a(href="proyek.html")
+							i.fa.fa-pie-chart(aria-hiden="true")
+							| Proyek
+					li
+						a(href="kontak.html")
+							i.fa.fa-envelope-o(aria-hiden="true")
+							| Kontak

@@ -1,0 +1,64 @@
+.latest-proyek {
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 100px 0 100px 0;
+	@media screen and(max-width: 480px) {
+		padding: 50px 0;
+	}
+}
+.last-proyek {
+	.img-proyek {
+		border-right: 1px solid $back-menu;
+		&:last-child {
+			border-right: none;
+		}
+		.img-cnt {
+			margin: 0 auto;
+			width: 75%;
+		}
+	}
+}
+.c-homepage {
+	border-bottom: 1px solid #ded;
+	border-top: 1px solid #ded;
+	.content-homepage {
+		text-align: center;
+		line-height: 2;
+		margin: 0 15% 0 15%;
+		padding: 5% 0 5% 0;
+		@include font_2(16px, $content, 400, $Raleway)
+		@media screen and(max-width: 480px) {
+			font-size: 12px;
+		}
+	}
+}
+.about {
+	.content-homepage {
+		text-align: center;
+		line-height: 2;
+		margin: 0 15% 0 15%;
+		padding: 5% 0 5% 0;
+		@include font_2(16px, $content, 400, $Raleway)
+		@media screen and(max-width: 480px) {
+			font-size: 12px;
+		}
+	}
+}
+.visi-misi {
+	margin-top: 100px;
+	.title-vm {
+		margin-bottom: 35px;
+		text-transform: uppercase;
+		@include font_2(18px, $content, 400, $Raleway)
+		@media screen and(max-width: 480px) {
+			font-size: 14px;
+		}
+	}
+	.content-vm {
+		margin-bottom: 40px;
+		@include font_2(14px, $content, 400, $Raleway)
+		@media screen and(max-width: 480px) {
+			font-size: 10px;
+		}
+	} 
+}

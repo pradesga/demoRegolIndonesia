@@ -1,0 +1,196 @@
+.header {
+	@extend .clearfix;
+	min-height: 190px;
+	margin-bottom: 15px;
+	.header-left {
+		height: 180px;
+		position: absolute;
+		z-index: 999;
+		padding-left: 0;
+		.brand {
+			background-repeat: no-repeat;
+			position: absolute;
+			height: 190px;
+			width: 100%;
+			@media screen and(max-width: 767px) {
+				height: 115px;
+			}
+		}
+		.img-logo {
+			position: absolute;
+			z-index: 999;
+			bottom: 0;
+			width: 50%;
+			right: 29%;
+			@media screen and(max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+	.header-right {
+		height: 180px;
+		padding-right: 0;
+		padding-left:0;
+		.top-navbar {
+			min-height: 115px;
+			background-color: $second-primary;
+			position: relative;
+			padding-top: 50;
+			@media screen and(max-width: 480px) {
+				padding-top: 20px;
+			}
+			.tag {
+				display: block;
+				top: 12px;
+				h1 {
+					margin: 0px;
+					text-align: right;
+					text-transform: uppercase;
+					@include font_2(16px, $brand-primary, 600, $Raleway)
+					@media screen and(max-width: 768px) {
+						font-size: 14px;
+					}
+					@media screen and(max-width: 767px) {
+						display:none;
+					}
+				}
+			}
+			.search {
+				position: relative;
+				
+			}
+			.form-group {
+			  float: right !important;
+			  transition: all 0.35s, border-radius 0s;
+			  width: 130px;
+			  background-color: #fff;
+			  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+			  border-radius: 4px;
+			  border: 1px solid #ccc;
+			  .form-control {
+				  padding-right: 20px;
+				  border: 0 none;
+				  background: transparent;
+				  box-shadow: none;
+				  display:block;
+				  &::-webkit-input-placeholder {
+					  display: none;
+					}
+				  &:-moz-placeholder {
+					  /* Firefox 18- */
+					  display: none;
+					}
+				  &::-moz-placeholder {
+					  /* Firefox 19+ */
+					  display: none;
+					}
+				  &:-ms-input-placeholder {
+					  display: none;
+					}
+					.form-control-feedback {
+					  position: absolute;
+					  top: -1px;
+					  right: -2px;
+					  z-index: 2;
+					  display: block;
+					  width: 34px;
+					  height: 34px;
+					  line-height: 34px;
+					  text-align: center;
+					  color: #3596e0;
+					  left: initial;
+					  font-size: 14px;
+					}
+				}
+			}
+			.search-form .form-group:hover,
+			.search-form .form-group.hover {
+			  width: 100%;
+			  /*border-radius: 4px 25px 25px 4px;*/
+			}
+			.fa-search:before{
+				background-color: #ded;
+				border-radius: 3px;
+			}
+			.glyphicon-search:before {
+				padding: 6px;
+			}
+		}
+		.navbar-inverse {
+			border-radius: 0px;
+			background-color: $back-menu;
+			border: none;
+			margin-bottom: 0px;
+			margin: 10px 0 10px 0;
+			z-index: 9;
+			.navbar-header {
+				border-bottom: 1px solid #ccc;
+				.navbar-brand {
+					padding: 8px 10px;
+				}
+			}
+			.navbar-toggle{
+				background: $second-primary;
+				&:focus , &:active {
+					background: $second-primary;
+				}
+			}
+		}
+		.navbar-collapse {
+			border-color: transparent;
+		}
+		.navbar-nav{
+			margin-left: 35px;
+			@media screen and (max-width: 480px) {
+				margin-left:0px;
+			}
+			li {
+				a {
+					@include font_2(16px, $menu, 600, $Raleway)
+					background-color: transparent;
+					padding-left: 30px;
+					padding-right: 30px;
+					text-transform: uppercase;
+					z-index: 999;
+					@media screen and(max-width: 990px) {
+						padding-right: 20px;
+						padding-left: 20px;
+					}
+					@media screen and(max-width: 768px) {
+						padding-right: 10px;
+						padding-left: 10px;
+					}
+					&:hover {
+						background-color: transparent;
+						color: $second-primary;
+					}
+					.fa {
+						position: relative;
+						&:before {
+							margin-right: 10px;
+						}
+					}
+					.img-r{
+						background-image: url(../images/R-abuabu.png);
+						width: 25px;
+						height: 25px;
+						display: inline-block;
+						background-repeat: no-repeat;
+						float: left;
+						background-size: 60%;
+					}
+				}
+				a:hover {
+					.img-r {
+						background-image: url('../images/Rmerah.png');
+					}
+				}
+			}
+		}
+	}
+}
+.background-homepage {
+	background-image: url(../images/background-homepage.png);
+	height: 50%;
+	@include paralax;
+}

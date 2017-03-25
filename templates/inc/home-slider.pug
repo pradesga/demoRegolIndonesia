@@ -1,0 +1,31 @@
+section.slider
+	#carousel-home.carousel.slide(data-ride="carousel")
+		ol.carousel-indicators
+			li.active(data-target="#carousel-home" data-slide-to="0")
+			li(data-target="#carousel-home" data-slide-to="1")
+			li(data-target="#carousel-home" data-slide-to="2")
+		.carousel-inner(role="listbox")
+			.item.active
+				.row.content-top.clearfix
+					.col-xs-4.box-title
+						h2.title Loream ipsum is simply dummy text of the printing
+					.col-xs-8.box-image
+						img.img-responsive(src="dist/images/slide-1.png")
+				.content-bottom
+					.container.text-center
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			.item
+				.row.content-top.clearfix
+					.col-xs-4.box-title
+						h2.title Loream ipsum is simply dummy text of the printing
+					.col-xs-8.box-image
+						img.img-responsive(src="dist/images/slide-2.png")
+				.content-bottom
+					.container.text-center
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		a.left.carousel-control(href="#carousel-home" role="button" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only Prev
+		a.right.carousel-control(href="#carousel-home" role="button" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only Next

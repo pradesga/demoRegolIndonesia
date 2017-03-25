@@ -1,0 +1,48 @@
+#carousel-home{
+	.carousel-indicators{
+		bottom: 0px;
+		li{
+			border-color: #ccc;
+			&.active{
+				background: $second-primary;
+			}
+		}
+	}
+	.carousel-inner{
+		.content-top{
+			background: $second-primary;
+			position: relative;
+			.box-title{
+				position: static;
+				.title{
+					color: $brand-primary;
+					position: absolute;
+					bottom: 5%;
+					left: 5%;
+				    width: 25%;
+				    text-align: right;
+				    margin: 0px;
+					@media screen and (max-width: 767px) {
+						font-size:20px;
+					}
+					@media screen and (max-width: 480px) {
+						font-size:12px;
+					}
+				}
+			}
+			.box-image{
+				background: #fff;
+			}
+		}
+		.content-bottom{
+			padding-bottom: 50px;
+			margin-top: 50px;
+			line-height: 2;
+			@include font_2(16px, $content, 400, $Raleway)
+		}
+	}
+	.carousel-control{
+		width: 5%;
+		background-image: none;
+	}
+}

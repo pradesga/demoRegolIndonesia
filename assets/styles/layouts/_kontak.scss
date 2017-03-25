@@ -1,0 +1,165 @@
+.kontak {
+	.content1 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		width: 70%;
+		text-transform: uppercase;
+		line-height: 1.5;
+		@include font_2(16px, #484747, 500, $Montserrat)
+		@media screen and(max-width: 480px) {
+			padding-top: 35px;
+			padding-bottom: 35px;
+			font-size: 14px;
+		}
+		@media screen and(max-width: 360px) {
+			font-size: 12px;
+		}
+	}
+	.content2 {
+		padding-bottom: 100px;
+		text-align: center;
+		@media screen and(max-width: 480px) {
+			padding-bottom: 25px;
+		}
+			li {
+				position: relative;
+				.fa {
+					color: $second-primary;
+				}
+				.title {
+					@include font_2(16px, #484747, 400, $Montserrat)
+					@media screen and(max-width: 480px) {
+						font-size: 14px;
+					}
+					@media screen and(max-width: 360px) {
+						font-size: 10px;
+					}
+				}
+				.content {
+					@include font_2(14px, #818181, 400, $Montserrat)
+					@media screen and(max-width: 480px) {
+						font-size: 12px;
+					}
+					@media screen and(max-width: 360px) {
+						font-size: 8px;
+					}
+					@media screen and(max-width: 360px) {
+						font-size: 6px;
+					}
+				}
+			}
+	}		
+}
+.message {
+	background-color: #f7f7f7;
+	padding-bottom: 70px;
+	@media screen and(max-width: 480px) {
+		padding-bottom: 25px;
+	}
+	.form-group {
+		.title {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			@media screen and (max-width: 768px) {
+				margin:0px;
+				margin-left: -15px;
+				padding: 30px 0px;
+			}
+			.label-title {
+				@include font_2(18px, $content-msg, 300, $Montserrat)
+				margin: 0px;
+				text-transform: uppercase;
+				@media screen and (max-width: 768px) {
+					font-size: 14px;
+				}
+				@media screen and (max-width: 480px) {
+					font-size: 12px;
+				}
+				@media screen and (max-width: 320px) {
+					font-size: 8px;
+				}
+			}
+			.line-team {
+				position: absolute;
+				display: block;
+				top: 8px;
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
+			}
+		}
+		.data {
+			@media screen and (max-width: 768px) {
+				margin-left:0px;
+			}
+			.list-input-data {
+				padding-bottom: 35px;
+				padding-left: 0px;
+				padding-right: 0px;
+				margin-left: 0px;
+				border-radius: 0px;
+				@media screen and(max-width: 990px) {
+					padding-bottom: 25px;
+				}
+				@media screen and(max-width: 480px) {
+					padding-bottom: 15px;
+				}
+				li {
+					padding-right: 20px;
+					&:first-child{
+						padding-left: 0px;	
+					}
+					&:last-child {
+						padding-right: 0px;
+					}
+				}
+				.inputdata {
+					width: 100%;
+					display: block;
+					margin: 0 auto;
+					padding-left: 10px;
+					border: 1px solid #ccc;
+					border-radius: 0px;
+					@include font_2(16px, $content-msg, 300, $Montserrat)
+					&:focus {
+						outline: $second-primary auto 5px !important;
+					}
+					@media screen and(max-width: 990px) {
+						font-size: 14px;
+					}
+					@media screen and(max-width: 768px) {
+						font-size: 12px;
+					}
+					@media screen and(max-width: 480px) {
+						font-size: 10px;
+						height: 25px;
+					}
+					@media screen and(max-width: 360px) {
+						height: 20px;
+					}
+				}
+			}
+			textarea.form-control {
+				border-radius: 0px;
+				@include font_2(16px, $content-msg, 300, $Montserrat)
+				@media screen and(max-width: 990px) {
+					font-size: 14px;
+				}
+				@media screen and(max-width: 768px) {
+					font-size: 12px;
+				}
+				@media screen and(max-width: 480px) {
+					font-size: 10px;
+				}
+			}
+			.btn-data {
+				margin-top: 50px;
+				border-radius: 0px;
+				color: $brand-primary;
+			}
+		}
+	}
+}
